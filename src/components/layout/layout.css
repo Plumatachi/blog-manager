@@ -1,0 +1,123 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    width: 100dvw;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    background: linear-gradient(135deg, #bc1c1c 0%, #a61648 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-primary {
+    background: rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+}
+
+.nav-link-primary:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.footer {
+    background: #2d3748;
+    color: #e2e8f0;
+    padding: 2rem 1.5rem;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container p {
+    margin: 0.5rem 0;
+}
+
+.footer-tech {
+    font-size: 0.875rem;
+    color: #a0aec0;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+
+    .main-content {
+        padding: 1.5rem 1rem;
+    }
+}
